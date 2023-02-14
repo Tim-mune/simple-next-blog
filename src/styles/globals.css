@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  body {
+    @apply bg-gray-900;
+    @apply text-teal-200;
+    font-family: "Quicksand", sans-serif;
+  }
+  h1 {
+    @apply mb-2 text-3xl font-bold uppercase tracking-widest;
+  }
+  h3 {
+    @apply mb-2 text-xl font-semibold tracking-widest;
+  }
+  p {
+    @apply font-medium tracking-wider leading-6 overflow-auto;
+  }
+  button {
+    @apply bg-sky-400 rounded-lg text-white p-1 m-2;
+  }
+  button:hover {
+    @apply transition duration-300 opacity-80 scale-105;
+  }
+  input[type="text"] {
+    @apply bg-slate-50  border-gray-200 rounded-md p-[5px] text-black;
+  }
+}
